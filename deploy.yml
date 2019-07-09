@@ -1,0 +1,14 @@
+---
+- name: configure rails 
+  hosts: all  # this is looking for hosts file , and see what is defined there
+  become: yes 
+  become_method: sudo # this tell
+  become_user: root 
+  vars: 
+    ansible_python_interpreter: /usr/bin/python3
+  roles: 
+    - setup  
+    
+    
+    # the command in temrianl vagrant provision runs this deploy.yml file, which runs ansible
+    # ansible uses python, 

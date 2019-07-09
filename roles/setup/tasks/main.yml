@@ -1,0 +1,4 @@
+---
+- name:  updates cache
+  apt:  # ansible uses moduels to mangage different htings, this is an example module
+    update_cache: yes   # attribute of apt
